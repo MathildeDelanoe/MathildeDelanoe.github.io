@@ -1,0 +1,850 @@
+/* page globale */
+@font-face
+{
+    font-family: 'Raleway';
+    src: url('Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#page
+{
+    margin:auto;
+    width:50%;
+    font-family:Raleway, Arial,sans-serif;
+}
+
+/* header */
+header
+{
+    display: flex;
+    align-items: center;
+}
+
+header div
+{
+    width: 5%;
+}
+
+header img
+{
+    width: 100%;
+}
+
+nav
+{
+    width: 85%;
+}
+
+ul
+{
+    list-style-type: none;
+    display:flex;
+}
+
+a 
+{
+    text-decoration:none;
+    color:black;
+}
+
+nav ul
+{
+    justify-content: flex-end;
+    font-size:0.7em;
+}
+
+nav ul li, nav ul li a
+{
+    padding: 20px 10px;
+}
+
+header > a
+{
+    width: 10%;
+    color:#0065FC;
+    font-size:0.7em;
+    font-weight:bold;
+    text-align: center;
+}
+
+nav a:hover, nav a:focus
+{
+    padding: 20px 10px;
+    border-top:1px solid #0065FC;
+    color:#0065FC;
+} 
+
+/* premiere section : partie recherche et filtres */
+h1
+{
+    font-size:1em;
+}
+
+h2
+{
+    font-size:0.8em;
+    font-weight:normal;
+}
+
+section
+{
+    margin-bottom: 15px;
+}
+
+section p
+{
+    font-size:0.8em;
+    margin-top:5px;
+}
+
+/* formulaire */
+form
+{
+    width: 300px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+form p
+{
+    margin:0;
+    padding:0;
+    height: 100%;
+    display: flex;
+}
+
+label
+{
+    background-color:#F2F2F2;
+    width:15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:10px 0px 0px 10px;
+}
+
+.fa-map-marker-alt
+{
+    font-size:13px;    
+}
+
+input:nth-child(2)
+{
+    padding-left:10px;
+    width:70%;
+    border: none;
+    border-top:1px solid #F2F2F2;
+    border-bottom:1px solid #F2F2F2;
+    font-weight:bold;
+}
+
+input:last-child
+{
+    border-radius:0px 10px 10px 0px;
+    font-weight:bold;
+    font-size:0.8em;
+    border: none;
+    background-color:#0065FC;
+    color:white;
+    cursor: pointer;
+}
+
+form:nth-child(4)
+{
+    display:none;
+}
+
+/* filtres */
+.recherche ul
+{
+	width:60%;
+    height:30px;
+    padding-left:0px;
+    font-size: 0.8em;
+    align-items: center;
+	justify-content: space-between;
+}
+
+.recherche li
+{
+	font-weight:bold;
+}
+
+.recherche li:nth-child(2), .recherche li:nth-child(3),
+.recherche li:nth-child(4), .recherche li:nth-child(5)
+{
+    padding: 5px 10px 5px 30px;
+    border : 1px solid rgb(210,210,210);
+    border-radius: 20px;
+    position:relative;
+    font-size:0.8em;
+    white-space: nowrap;
+}
+
+.recherche li:nth-child(2):hover, .recherche li:nth-child(3):hover,
+.recherche li:nth-child(4):hover, .recherche li:nth-child(5):hover
+{
+    background-color:rgba(222, 235, 255, 0.4);
+}
+
+.recherche li div
+{
+    width: 24px;
+    height: 24px;
+    background-color: #DEEBFF;
+    border-radius:50%;
+    position:absolute;
+    left: -2px;
+    top:-1px;
+}
+
+.recherche li div p
+{
+    padding:0;
+    margin:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog
+{
+    color:blue;
+}
+
+.recherche div:last-child
+{
+    display:flex;
+}
+
+.fa-info
+{
+    color:#0065FC; 
+    font-size:7px;
+    border:1px solid rgb(210,210,210);
+    border-radius:50%;
+    padding:2px 5px;
+    margin-right:5px;
+    margin-left:5px;
+}
+
+/* partie hébergements et populaire */
+h3
+{
+    font-size: 0.8em;
+}
+
+.heb_pop
+{
+    display:flex;
+    justify-content:space-between;
+}
+
+
+/* hebergements */
+figcaption
+{
+    font-size:0.7em;
+    font-weight:bold;
+    padding-top:2px;
+    padding-left:5px;
+}
+
+.heb_pop > div
+{
+    background-color:#F2F2F2;
+    width:69%;
+    height:430px;
+    border-radius:10px;
+}
+
+.heb_pop h3
+{
+	margin:20px 0px 0px 20px;
+}
+
+.heb_pop > div > h3
+{
+	margin-bottom: 8px;
+}
+
+.heb_pop h3+div
+{
+    height: 80%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+ 
+.heb_pop > div p
+{
+    font-size: 0.6em;
+    margin: 0px 0px 3px 8px; 
+}
+
+.heb_pop > div > p
+{
+	margin-top: 10px;
+}
+
+.heb_pop > div > p a
+{
+    font-weight:bold; 
+	padding-left:12px;
+}
+
+.heb_pop > div > div div
+{
+    background-color:white;
+    width:30%;
+    border-radius : 10px;
+    box-shadow:6px 6px 12px rgb(210,210,210);
+}
+
+.heb_pop > div figure
+{
+    margin:3px;
+}
+
+.heb_pop > div img
+{
+    width:100%;
+    height:100px;
+    border-radius:10px 10px 0 0;
+    object-fit:cover;
+}
+
+.blue{
+    color:#0065FC;
+    font-size:7px;
+}
+
+.grey{
+    color:rgb(212,212,212);
+    font-size:7px;
+}
+
+/* partie populaire */
+aside
+{
+    background-color:#F2F2F2;
+    width:28%;
+    height:430px;
+    border-radius:10px;
+}
+
+aside > div:first-child
+{
+    position: relative;
+    width: 100%;
+    height:11%;
+}
+
+aside h3
+{
+    position: absolute;
+    left:0;
+    top:0;
+}
+
+.fa-chart-line
+{
+    position: absolute;
+    right:20px;
+    top:20px;
+    font-size:0.8em;
+}
+
+aside > div:nth-child(2)
+{
+    height:80%;
+    margin-top: 2%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+aside a
+{
+    width:80%;
+}
+
+aside > div:nth-child(2) div:first-child
+{
+    width:100%;
+    height: 100px;
+    background-color:white;
+    border-radius:10px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow:6px 6px 12px rgb(210,210,210);
+}
+
+aside img
+{
+    width:40%;
+    height:90%;
+    border-radius:10px 0px 0px 10px;
+    object-fit:cover;
+}
+
+aside div div div
+{
+    width:50%;
+    height:90%; 
+    position:relative;
+}
+
+aside p
+{
+    font-size:0.6em;
+}
+
+aside p:first-child
+{
+    font-weight:bold;
+    font-size:0.7em;
+    margin-bottom:0px;
+}
+
+aside p:last-child
+{
+    position: absolute;
+    bottom: 0px;
+    left:0px;
+}
+
+/* activités */
+#activites h3
+{
+    margin-top:30px;
+}
+
+#activites > div
+{
+    display:flex;
+    width:100%;
+    justify-content:space-between;
+}
+
+#activites > div > div
+{
+    width: 22.5%;
+}
+
+#activites figure
+{
+    width: 100%;
+    margin:0;
+}
+
+#activites img
+{
+    width: 100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:10px 10px 0 0;
+}
+
+#activites figcaption
+{
+    padding-top:5px;
+}
+
+/* Gestion des colonnes impaires */
+#activites > div > div:nth-child(odd)
+{
+    height:280px;
+    box-shadow:6px 6px 12px #F2F2F2;
+    border-radius:10px;
+}
+
+#activites > div > div:nth-child(odd) figure
+{
+    height:250px;
+}
+
+/* Gestion des colonnes paires */
+#activites > div > div:nth-child(even)
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:280px;
+}
+
+#activites > div > div:nth-child(even) div
+{
+    box-shadow:6px 6px 12px #F2F2F2;
+    border-radius:10px;
+}
+
+/* Gestion de la 2e colonne */
+#activites > div > div:nth-child(2) div:first-child 
+{
+    height:160px;
+}
+
+#activites > div > div:nth-child(2) div:first-child figure
+{
+    height:130px;
+}
+
+#activites > div > div:nth-child(2) div:last-child
+{
+    height:100px;
+}
+
+#activites > div > div:nth-child(2) div:last-child figure
+{
+    height:70px;
+}
+
+/* Gestion de la 4e colonne */
+#activites > div > div:nth-child(4) div
+{
+    height:130px;
+}
+
+#activites > div > div:nth-child(4) figure
+{
+    height:100px;
+}
+
+/* footer */
+footer
+{
+    background-color:#F2F2F2;
+    font-size:0.8em;
+    width: 52%;
+    margin:auto;
+    margin-top: 30px;
+}
+
+footer > div
+{
+    width: 70%;
+    display:flex;
+    justify-content: space-between;
+    padding:15px 0px 30px 30px;
+}
+
+footer p
+{
+    margin:0px 0px 5px 0px;
+}
+
+/* Partie responsive commune pour tous types d'ecran inferieur a 1024px*/
+@media all and (max-width:1024px)
+{
+    header
+    {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    
+    header div
+    {
+        width:20%;
+    }
+
+    header img
+    {
+        width:100%;
+        order: 1;
+    }
+    
+    header > a
+    {
+        width: 75%;
+        font-size:1.2em;
+        padding-right: 5%;
+        order:2;
+        text-align: right;
+    }
+
+    nav
+    {
+        width:100%;
+        order:3;
+        margin-top: 20px;
+        height: 40px;
+    }
+
+    nav ul
+    {
+        padding:0px;
+        margin:0px;
+        height: 100%;
+        text-align: center;
+    }
+
+    nav ul li
+    {
+        padding:0px;
+        margin:0px;
+        width: 50%;
+        height: 100%;
+        display:flex;
+    }
+
+    nav ul li a
+    {
+        padding:0;
+        margin:0;
+        font-size: 1.5em;
+        width: 100%;
+        height:100%;  
+        border-bottom: 2px solid rgb(210,210,210);
+    }
+
+    nav a:hover, nav a:focus
+    {
+        padding: 0px;
+        border-top: none;
+        border-bottom:2px solid #0065FC;
+    }
+    
+    .heb_pop
+    {
+        flex-direction:column-reverse;
+    }
+    
+    footer
+    {
+        width:90%;
+    }
+}
+
+/* partie responsive telephone */
+@media all and (max-width:767px)
+{
+    #page
+    {
+        width:100%;
+    }
+
+    section
+    {
+        width:85%;
+        margin:auto;
+    }
+
+    /* premiere section : partie recherche et filtres */
+    .recherche
+    {
+		width:65%;
+    }
+
+    /* formulaire */
+    .recherche form:first-of-type
+    {
+        display:none;
+    }
+
+    form:last-of-type
+    {
+        display:block;
+        width: 100%;
+    }
+
+    label
+    {
+        width: 10%;
+    }
+    
+    input:nth-child(2)
+    {
+        width: 75%;
+    }
+
+    form p a
+    {
+        width: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius:10px;
+        background-color:#0065FC;
+    }
+
+    .fa-search
+    {
+        color:white;
+    }
+
+    /* filtres */
+    .recherche ul
+    {
+		width: 100%;
+        flex-wrap:wrap;
+		height:130px;
+	}
+
+    .recherche li div
+    {
+        width: 27px;
+        height: 27px;
+    }
+
+    .recherche li:first-child{
+        width:100%;
+    }
+
+    .recherche li:nth-child(2),.recherche li:nth-child(3)
+    ,.recherche li:nth-child(4),.recherche li:nth-child(5)
+    {
+        font-size:1em;
+    }
+    
+    /* partie populaire et hébergements */
+    aside
+    {
+        width:100%;
+        border-radius: 0px;
+    }
+
+    .heb_pop > div
+    {
+        width:100%;
+		height: auto;
+		background-color:white;
+    }
+
+    .heb_pop > div > div div
+    {
+        width:90%;
+        margin-bottom:20px;
+    }
+
+    aside a
+    {
+        width:70%;
+    }
+
+    /* partie activité */
+    #activites h3
+    {
+        margin-left:15px;
+    }
+
+    #activites > div
+    {
+        height:900px;
+        flex-direction:column;
+        justify-content:space-between;
+    }
+
+    #activites > div > div
+    {
+        width: 90%;
+        margin:auto;
+    }
+
+    /* Mise a la meme dimension des colonnes impaires et de la 2e colonne */
+    #activites > div > div:nth-child(odd),
+    #activites > div > div:nth-child(2) div:first-child,
+    #activites > div > div:nth-child(2) div:last-child
+    {
+        height:130px;
+    }
+
+    #activites > div > div:nth-child(odd) figure,
+    #activites > div > div:nth-child(2) div:first-child figure,
+    #activites > div > div:nth-child(2) div:last-child figure
+    {
+        height:100px;
+    }
+
+    /* footer */
+    footer div
+    {
+        flex-direction:column;
+    }
+}
+
+
+/* partie responsive tablette (entre 768px et 1024px)*/
+@media all and (min-width:768px) and (max-width:1024px)
+{
+    #page
+    {
+        width:100%;
+    }
+
+    section
+    {
+        width:85%;
+        margin:auto;
+	}
+	
+	.recherche ul
+	{
+		width:80%;
+	}
+
+    /* partie populaire et hébergements */
+    aside
+    {
+        width:100%;
+        height: 550px;
+        margin-bottom:20px;
+    }
+
+    aside > div:nth-child(2)
+    {
+        height:85%;
+        margin: 0;
+    }
+ 
+    aside > div:nth-child(2) div:first-child
+    {
+        height:150px;
+    }
+
+    .heb_pop > div
+    {
+        width:100%;
+    }
+
+    .heb_pop > div > p
+    {
+        margin-top: 0px;
+    }
+
+    .heb_pop > div > div
+    {
+        margin-bottom:20px;
+    }
+
+    /* partie activité */
+    #activites figcaption
+    {
+        font-size:0.6em;
+    }
+}
+
+/* partie responsive petite version (en-dessous de 250px)*/
+@media all and (max-width:250px)
+{
+    aside a
+    {
+        width:80%;
+    }
+    aside p, aside p:first-child
+    {
+        font-size:0.6em;
+    }
+
+    input:nth-child(2)
+    {
+        font-size: 0.8em;
+    }
+}
